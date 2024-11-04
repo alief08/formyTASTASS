@@ -1,0 +1,56 @@
+.hero-section{
+    background: url(pinkbg.jpg);
+	width: 100%;
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+
+}
+
+.hero-section .container{
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title-section{
+    height: 100vh;
+    z-index: 2;
+    position: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.latar{
+    background: url(pinkbg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 150vh;
+}
+
+.latar .card-img-top{
+    background-image: none;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #1C1A1C;
+    transition: all 450ms ease-in-out;
+    animation: zoomIn;
+    animation-duration: 2s;
+}
+
+.p{
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 20px;
+    color: hotpink;
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: zoomIn;
+    animation-duration: 2s;
+}
+

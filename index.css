@@ -1,0 +1,110 @@
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-color: #ffffff;
+}
+
+.night {
+  background-size: cover;
+  transform: translateX(-0%);
+  width: 100%;
+  height: 100vh;
+  filter: blur(0.1vmin);
+  background-image: url(pinkbg.jpg);
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+  text-shadow: 0 0 20px white;
+  letter-spacing: 0px;
+}
+
+@media (min-width: 500px) {
+  .title {
+    letter-spacing: 20px;
+  }
+}
+
+@keyframes typing {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Terapkan animasi dengan delay */
+.title span {
+  opacity: 0;
+  animation: typing 1s ease forwards;
+  animation-delay: var(--delay);
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border: none;
+  width: 15em;
+  height: 5em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #ff33ff;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+}
+
+.sparkle {
+  fill: #AAAAAA;
+  transition: all 800ms ease;
+}
+
+.text {
+  font-weight: 600;
+  color: #AAAAAA;
+  font-size: medium;
+}
+
+.btn:hover {
+  background: linear-gradient(0deg, #f871dd, #ff34f8);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(255, 48, 234, 0.964),
+    0px 0px 0px 4px rgba(251, 36, 255, 0.914),
+    0px 0px 180px 0px #ff34f8;
+  transform: translateY(-2px);
+}
+
+.btn:hover .text {
+  color: white;
+}
+
+.btn:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+}
